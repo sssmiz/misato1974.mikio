@@ -2,20 +2,13 @@
 
 /* --- Fonts --- */
 :root {
-  --bs-body-font-family: "Noto Sans JP", sans-serif;
+  --bs-body-font-family: 'Noto Sans JP', sans-serif;
   --primary-color: #2c3e50;
   --secondary-color: #3498db;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.navbar-brand,
-.display-4 {
-  font-family: "Noto Serif JP", serif;
+h1, h2, h3, h4, h5, h6, .navbar-brand, .display-4 {
+  font-family: 'Noto Serif JP', serif;
   font-weight: 600;
 }
 
@@ -34,12 +27,12 @@ h6,
 }
 
 .btn-primary:hover {
-  background-color: #2980b9 !important; /* A slightly darker blue */
+  background-color: #2980b9 !important;
   border-color: #2980b9 !important;
 }
 
 .btn-outline-light {
-  border-width: 2px;
+    border-width: 2px;
 }
 
 /* --- General Components --- */
@@ -51,7 +44,7 @@ h6,
 }
 
 .section-title::after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -62,34 +55,32 @@ h6,
 }
 
 .card {
-  border: none;
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border: none;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    transform: translateY(-5px);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
 }
 
 /* --- Header --- */
 .navbar-brand {
-  font-size: 1.75rem;
+    font-size: 1.75rem;
 }
 
 .nav-link {
-  font-weight: 700;
-  font-size: 0.9rem;
-  text-transform: uppercase;
-}
-
-/* --- Message Section --- */
-#message {
-  padding-top: 8rem;
-  padding-bottom: 8rem;
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-transform: uppercase;
 }
 
 /* --- Footer --- */
 .site-footer a:hover {
-  color: var(--secondary-color) !important;
-  text-decoration: underline !important;
+    color: var(--secondary-color) !important;
+    text-decoration: underline !important;
+}
+
+.img-fluid {
+  width: 75%;
 }
