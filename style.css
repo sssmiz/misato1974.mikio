@@ -1,10 +1,17 @@
-/* --- Custom Styles --- */
-
-/* --- Fonts --- */
 :root {
-  --bs-body-font-family: "Noto Sans JP", sans-serif;
-  --primary-color: #2c3e50;
-  --secondary-color: #3498db;
+  --primary-color: #960306; /* メインカラー (深い赤) */
+  --bg-color: #e2d4bf; /* 背景色 (ベージュ) */
+  --secondary-color: #969696; /* サブカラー (グレー) */
+  --text-color: #343a40; /* 文字色 (濃いグレー) */
+  --heading-font: "Noto Serif JP", serif;
+  --body-font: "Noto Sans JP", sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--body-font);
+  line-height: 1.8;
 }
 
 h1,
@@ -13,81 +20,116 @@ h3,
 h4,
 h5,
 h6,
-.navbar-brand,
-.display-4 {
-  font-family: "Noto Serif JP", serif;
-  font-weight: 600;
+.navbar-brand {
+  font-family: var(--heading-font);
+  font-weight: 700;
+  letter-spacing: 0.05em;
 }
 
-/* --- Theme Colors --- */
-.bg-primary {
-  background-color: var(--primary-color) !important;
-}
-
-.text-primary {
-  color: var(--secondary-color) !important;
-}
-
-.btn-primary {
-  background-color: var(--secondary-color) !important;
-  border-color: var(--secondary-color) !important;
-}
-
-.btn-primary:hover {
-  background-color: #2980b9 !important;
-  border-color: #2980b9 !important;
-}
-
-.btn-outline-light {
-  border-width: 2px;
-}
-
-/* --- General Components --- */
 .section-title {
   font-size: 2.5rem;
   margin-bottom: 3rem;
-  position: relative;
-  padding-bottom: 1rem;
+  color: var(--primary-color);
 }
 
-.section-title::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80px;
-  height: 4px;
-  background-color: var(--secondary-color);
+.navbar {
+  background-color: #fff !important;
 }
 
-.card {
-  border: none;
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
-}
-
-/* --- Header --- */
 .navbar-brand {
-  font-size: 1.75rem;
+  color: var(--primary-color) !important;
+  font-size: 1.8rem;
 }
 
-.nav-link {
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
   font-weight: 700;
-  font-size: 0.9rem;
-  text-transform: uppercase;
+  color: #fff;
+  transition: all 0.3s ease;
 }
 
-/* --- Footer --- */
-.site-footer a:hover {
-  color: var(--secondary-color) !important;
-  text-decoration: underline !important;
+.btn-primary:hover {
+  background-color: #c80409; /* 少し明るい赤 */
+  border-color: #c80409;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-.img-fluid {
-  width: 75%;
+.btn-secondary {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  color: #fff;
+}
+
+#hero {
+  background-color: var(--primary-color);
+  padding: 8rem 0;
+}
+
+section {
+  padding: 6rem 0;
+}
+
+#policy,
+#about {
+  background-color: #fff;
+}
+
+.theme-card {
+  background-color: #fff;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.theme-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+footer {
+  background-color: var(--primary-color);
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+}
+#overlay h1 {
+  color: white;
+  font-size: 4rem;
+  font-family: var(--heading-font);
+}
+
+/* --- Media Queries --- */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  #hero {
+    padding: 6rem 0;
+  }
+
+  #hero h1.display-3 {
+    font-size: 2.5rem;
+  }
+
+  section {
+    padding: 4rem 0;
+  }
 }
