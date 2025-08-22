@@ -97,6 +97,11 @@ footer {
   background-color: var(--primary-color);
 }
 
+.message-content p {
+  font-weight: 700; /* フォントを太くする */
+  line-height: 2;   /* 行間を少し広げて読みやすくする */
+}
+
 /* --- Media Queries --- */
 @media (max-width: 768px) {
   .section-title {
