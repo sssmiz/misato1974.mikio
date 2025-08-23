@@ -99,7 +99,12 @@ footer {
 
 .message-content p {
   font-weight: 700; /* フォントを太くする */
-  line-height: 2;   /* 行間を少し広げて読みやすくする */
+  line-height: 1;   /* 行間を少し広げて読みやすくする */
+  white-space: nowrap;
+}
+
+.signature {
+  font-size: 1.25rem;
 }
 
 /* --- Media Queries --- */
