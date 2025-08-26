@@ -111,8 +111,10 @@ footer {
 }
 
 .message-content p {
+  font-family: var(--heading-font); /* 力強いセリフ体に */
+  font-size: 1.1rem; /* 少し文字サイズを大きく */
   font-weight: 400;
-  line-height: 1.8;
+  line-height: 2; /* 行間を広げて読みやすく */
   text-align: left;
 }
 
@@ -128,9 +130,17 @@ footer {
 }
 
 .message-background {
-  background-color: #f0f0f0;
-  padding: 2rem;
-  border-radius: 15px;
+  background-color: #ffffff; /* 白背景に変更 */
+  padding: 2.5rem; /* パディングを少し増やす */
+  border-radius: 10px; /* 角丸を少しシャープに */
+  border-left: 8px solid var(--primary-color); /* 左に力強いボーダーを追加 */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1); /* 影を少し強調 */
+  transition: all 0.3s ease;
+}
+
+.message-background:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
 }
 
 /* --- Media Queries --- */
