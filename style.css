@@ -106,7 +106,7 @@ footer {
 .message-content p {
   font-weight: 700; /* フォントを太くする */
   line-height: 1;   /* 行間を少し広げて読みやすくする */
-  white-space: nowrap;
+  text-align: center;
 }
 
 .signature {
