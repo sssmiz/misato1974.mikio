@@ -113,6 +113,10 @@ footer {
   font-size: 1.25rem;
 }
 
+#instagram {
+  background-color: var(--bg-color);
+}
+
 /* --- Media Queries --- */
 @media (max-width: 768px) {
   .section-title {
