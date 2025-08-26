@@ -103,14 +103,24 @@ footer {
   background-color: var(--primary-color);
 }
 
+.message-box {
+  background-color: #f8f9fa;
+  padding: 2rem;
+  border-radius: 15px;
+  border: 1px solid #e9ecef;
+}
+
 .message-content p {
-  font-weight: 700; /* フォントを太くする */
-  line-height: 1;   /* 行間を少し広げて読みやすくする */
-  text-align: center;
+  font-weight: 400;
+  line-height: 1.8;
+  text-align: left;
 }
 
 .signature {
   font-size: 1.25rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  text-align: right;
 }
 
 #instagram {
